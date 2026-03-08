@@ -17,7 +17,7 @@ function generateReport(profile: NumerologyProfile, name: string): string {
   return `# ✦ 生命靈數解析報告
 
 **靈魂之名：** ${name}  
-**報告生成者：** 福星何大師 · 宇宙數字觀測站  
+**報告生成者：** 福青施老師 · 宇宙數字觀測站  
 **解析頻率：** 覺醒次元 · 靈魂層面
 
 ---
@@ -188,7 +188,7 @@ ${
 ## 拾貳、生命啟示金句
 
 > *「你不是一個偶然降生的靈魂，你是宇宙精心設計的傑作。每一個數字都是你靈魂的一部分，每一個挑戰都是你成長的階梯。當你開始理解自己的生命藍圖，你就開始了真正的自我覺醒之旅。」*  
-> — 福星何大師
+> — 福青施老師
 
 ---
 
@@ -216,7 +216,7 @@ ${
 
 ---
 
-*✦ 此報告由福星何大師 · 生命靈數宇宙觀測站生成*  
+*✦ 此報告由福青施老師 · 生命靈數宇宙觀測站生成*  
 *每一個數字都是宇宙給你的訊息，願你帶著覺知，繼續美麗的旅程。*
 `;
 }
@@ -400,7 +400,7 @@ const AIReport = ({ profile, name = "靈魂旅者" }: AIReportProps) => {
           >
             <div>
               <div className="cosmic-label">生命靈數解析報告</div>
-              <div className="text-sm font-bold text-primary mt-0.5">{reportName} · 福星何大師</div>
+              <div className="text-sm font-bold text-primary mt-0.5">{reportName} · 福青施老師</div>
             </div>
             <button
               className="btn-cosmic-cyan text-xs px-3 py-2"

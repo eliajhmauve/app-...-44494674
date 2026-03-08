@@ -8,9 +8,7 @@ export default {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+      screens: { "2xl": "1400px" },
     },
     extend: {
       colors: {
@@ -57,6 +55,23 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        cosmic: {
+          gold: "hsl(var(--cosmic-gold))",
+          cyan: "hsl(var(--cosmic-cyan))",
+          magenta: "hsl(var(--cosmic-magenta))",
+          violet: "hsl(var(--cosmic-violet))",
+          green: "hsl(var(--cosmic-green))",
+          red: "hsl(var(--cosmic-red))",
+          dark: "hsl(var(--cosmic-dark))",
+          panel: "hsl(var(--cosmic-panel))",
+          surface: "hsl(var(--cosmic-surface))",
+          border: "hsl(var(--cosmic-border))",
+        },
+      },
+      fontFamily: {
+        display: ["Space Grotesk", "Noto Sans TC", "sans-serif"],
+        mono: ["Space Mono", "monospace"],
+        body: ["Noto Sans TC", "Space Grotesk", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,27 +80,43 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        shimmer: {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "scale-in": {
+          "0%": { transform: "scale(0.95)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        shimmer: "shimmer 4s linear infinite",
+        "fade-in": "fade-in 0.4s ease-out",
+        "scale-in": "scale-in 0.3s ease-out",
+      },
+      boxShadow: {
+        brutal: "6px 6px 0 hsl(var(--primary))",
+        "brutal-sm": "4px 4px 0 hsl(var(--primary))",
+        "brutal-cyan": "6px 6px 0 hsl(var(--cosmic-cyan))",
+        "brutal-magenta": "6px 6px 0 hsl(var(--cosmic-magenta))",
+        "glow-gold": "0 0 30px hsl(var(--primary) / 0.4), 0 0 60px hsl(var(--primary) / 0.2)",
+        "glow-cyan": "0 0 30px hsl(var(--cosmic-cyan) / 0.4)",
+        "glow-magenta": "0 0 30px hsl(var(--cosmic-magenta) / 0.4)",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config;

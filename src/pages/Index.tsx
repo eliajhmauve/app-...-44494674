@@ -144,7 +144,7 @@ const Index = () => {
           {/* Footer */}
           <footer className="border-t border-border/30 py-6 text-center">
             <div className="cosmic-label text-xs opacity-40">
-              ✦ 福星何大師 · 生命靈數宇宙觀測站 · LIFE NUMEROLOGY COSMOS ✦
+              ✦ 福青施老師 · 生命靈數宇宙觀測站 · LIFE NUMEROLOGY COSMOS ✦
             </div>
           </footer>
         </div>

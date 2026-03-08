@@ -1,4 +1,4 @@
-// 生命靈數解析資料庫 — 福星何大師
+// 生命靈數解析資料庫 — 福青施老師
 
 export interface NumberMeaning {
   number: number;

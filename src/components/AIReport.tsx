@@ -400,7 +400,7 @@ const AIReport = ({ profile, name = "靈魂旅者" }: AIReportProps) => {
           >
             <div>
               <div className="cosmic-label">生命靈數解析報告</div>
-              <div className="text-sm font-bold text-primary mt-0.5">{reportName} · 福星何大師</div>
+              <div className="text-sm font-bold text-primary mt-0.5">{reportName} · 福青施老師</div>
             </div>
             <button
               className="btn-cosmic-cyan text-xs px-3 py-2"

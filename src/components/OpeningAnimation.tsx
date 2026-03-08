@@ -137,7 +137,7 @@ const OpeningAnimation = ({ onComplete }: OpeningAnimationProps) => {
         ctx.font = `${Math.min(W * 0.025, 18)}px 'Space Mono', monospace`;
         ctx.fillStyle = `rgba(0,220,240,${textAlpha})`;
         ctx.shadowColor = `rgba(0,220,240,${textAlpha * 0.8})`;
-        ctx.fillText("LIFE NUMEROLOGY COSMOS · 福星何大師", cx, cy + 20);
+        ctx.fillText("LIFE NUMEROLOGY COSMOS · 福青施老師", cx, cy + 20);
         ctx.restore();
       }
 

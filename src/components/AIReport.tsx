@@ -17,7 +17,7 @@ function generateReport(profile: NumerologyProfile, name: string): string {
   return `# ✦ 生命靈數解析報告
 
 **靈魂之名：** ${name}  
-**報告生成者：** 福星何大師 · 宇宙數字觀測站  
+**報告生成者：** 福青施老師 · 宇宙數字觀測站  
 **解析頻率：** 覺醒次元 · 靈魂層面
 
 ---

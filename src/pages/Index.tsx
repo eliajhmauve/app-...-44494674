@@ -56,7 +56,7 @@ const Index = () => {
                     <div className="font-bold text-sm leading-tight" style={{ fontFamily: "var(--font-display)" }}>
                       生命靈數宇宙觀測站
                     </div>
-                    <div className="cosmic-label text-xs opacity-60">福星何大師 · LIFE NUMEROLOGY</div>
+                    <div className="cosmic-label text-xs opacity-60">福青施老師 · LIFE NUMEROLOGY</div>
                   </div>
                 </div>
                 <div className="hidden md:flex items-center gap-2">
